@@ -3,6 +3,6 @@ const authorization = require("../middleware/authorization.js")
 const router=require("express").Router()
 
 router.post("/addauth",auth.add)
-router.delete("/delete",authorization,auth.remove)
+router.delete("/delete",auth.remove)
 
 module.exports=router
