@@ -4,9 +4,11 @@
     "src":"./index.js",
     "use":"@vercel/node"
   }],
-  "rewrites":[{
-    "source":"/(.*)",
-    "destination":"/",
-    "methods": ["GET", "POST", "PUT", "DELETE", "OPTION"]
-  }]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "./index.js",
+      "methods": ["GET", "POST", "PUT", "DELETE", "OPTION"]
+    }
+  ]
 }
