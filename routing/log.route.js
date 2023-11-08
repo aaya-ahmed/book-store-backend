@@ -4,7 +4,7 @@ const authorization=require("../middleware/authorization.js")
 router.post("/userregister",log.userregister)
 router.post("/adminregister",log.adminregister)
 router.post("/login",log.login)
-router.delete("/logout",authorization,log.logout)
-router.delete("/logoutall",authorization,log.logoutall)
+router.delete("/logout",log.logout)
+router.delete("/logoutall",log.logoutall)
 
 module.exports=router
